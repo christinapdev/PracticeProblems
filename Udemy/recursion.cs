@@ -9,6 +9,13 @@ class Program
         int input = Convert.ToInt32(Console.ReadLine());
         Console.WriteLine(findFactorialRecursive(input));
         Console.WriteLine(findFactorialIterative(input));
+        Console.WriteLine(findFactorialRecursiveTwo(input));
+    }
+
+    public static int findFactorialRecursiveTwo(int number)
+    {
+        if(number == 2) return 2;
+        return findFactorialRecursiveTwo(number -1)  * number;
     }
 
     public static int findFactorialRecursive(int number)
