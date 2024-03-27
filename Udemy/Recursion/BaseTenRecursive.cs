@@ -9,6 +9,8 @@ class Program
         Console.Write("Put in string: ");
         int input = Int32.Parse(Console.ReadLine());
         Console.WriteLine(BaseTwo(input, ""));
+
+        //simple comment
     }
    
 
